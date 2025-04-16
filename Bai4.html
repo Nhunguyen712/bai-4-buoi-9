@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form Đăng Ký</title>
+    <style>
+        body { font-family: Arial; }
+        .form-container {
+            width: 400px;
+            margin: auto;
+            border: 1px solid #333;
+            padding: 20px;
+        }
+        h3 {
+            text-align: center;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <script src="javaBai4.js"></script>
+    <div class="form-container">
+        <form name="formDK" onsubmit="return validateForm()">
+            <h3>FORM ĐĂNG KÝ</h3>
+            Họ <input type="text" name="ho"><br><br>
+            Tên <input type="text" name="ten"><br><br>
+            Ngày sinh:
+            <select name="ngay">
+                <option>1</option><option>2</option><option>3</option>
+            </select>
+            Tháng:
+            <select name="thang">
+                <option>1</option><option>2</option><option>3</option>
+            </select>
+            Năm:
+            <select name="nam">
+                <option>1980</option><option>1990</option><option>2000</option>
+            </select>
+            <br><br>
+            Giới tính:
+            <input type="radio" name="gender" value="Nam">Nam
+            <input type="radio" name="gender" value="Nữ">Nữ
+            <br><br>
+            Số điện thoại <input type="text" name="sdt"><br><br>
+            Sở thích:
+            <input type="checkbox" name="st1">Đọc sách
+            <input type="checkbox" name="st2">Xem phim
+            <input type="checkbox" name="st3">Nghe nhạc
+            <input type="checkbox" name="st4">Đá bóng
+            <br><br>
+            Khác: <input type="text" name="khac"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
